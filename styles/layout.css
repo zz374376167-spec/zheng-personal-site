@@ -1,0 +1,40 @@
+.site-shell {
+  margin-inline: auto;
+  max-width: var(--content-max);
+  padding-inline: var(--page-gutter);
+  width: 100%;
+}
+
+.page-shell {
+  margin-inline: auto;
+  max-width: var(--content-max);
+  min-height: 70vh;
+  padding: var(--page-block) var(--page-gutter);
+  width: 100%;
+}
+
+.reading-column {
+  max-width: var(--reading-max);
+}
+
+.section-stack > * + * {
+  margin-top: var(--section-gap);
+}
+
+/* Default editorial image-to-copy ratio: 7/5; reverse modifier gives copy priority. */
+.editorial-grid {
+  display: grid;
+  gap: clamp(2rem, 6vw, 6rem);
+  grid-template-columns: minmax(0, var(--media-column)) minmax(16rem, var(--copy-column));
+}
+
+.editorial-grid--reverse {
+  grid-template-columns: minmax(16rem, var(--copy-column)) minmax(0, var(--media-column));
+}
+
+@media (max-width: 48rem) {
+  .editorial-grid,
+  .editorial-grid--reverse {
+    grid-template-columns: 1fr;
+  }
+}
