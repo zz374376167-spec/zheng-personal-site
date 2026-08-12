@@ -3,7 +3,7 @@
   --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 
   --type-hero-size: clamp(4rem, 12vw, 10rem);
-  --type-hero-line: 0.88;
+  --type-hero-line: 0.92;
   --type-page-size: clamp(2.75rem, 7vw, 6rem);
   --type-page-line: 0.95;
   --type-section-size: clamp(1.75rem, 3.5vw, 3rem);
@@ -38,9 +38,10 @@
 
 .type-hero {
   font-size: var(--type-hero-size);
-  font-weight: 500;
-  letter-spacing: -0.055em;
+  font-weight: 520;
+  letter-spacing: -0.06em;
   line-height: var(--type-hero-line);
+  white-space: nowrap;
 }
 
 .type-page-title {
