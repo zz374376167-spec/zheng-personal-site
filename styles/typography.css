@@ -49,6 +49,12 @@
   -webkit-text-fill-color: currentColor;
 }
 
+.hero-monument-title {
+  color: #d7dbd9;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.08);
+  -webkit-text-fill-color: currentColor;
+}
+
 @media (max-width: 30rem) {
   .hero-title-block {
     font-size: clamp(3.25rem, 20vw, 5.5rem);

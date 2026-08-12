@@ -11,7 +11,7 @@ const wechatId = "zhanzheng374376";
 
 export default function ContactPage() {
   return (
-    <PageContainer>
+    <PageContainer environment="contact">
       <header className="grid min-h-[66vh] items-end gap-16 border-b border-[var(--color-line)] pb-16 lg:grid-cols-[7fr_5fr] lg:pb-24">
         <SectionTitle eyebrow="Contact / A beginning" title="Let’s connect." />
         <div className="max-w-md lg:pb-2">

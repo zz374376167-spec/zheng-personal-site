@@ -14,7 +14,7 @@ export default function AboutPage() {
   const bio = getBioContent();
 
   return (
-    <PageContainer>
+    <PageContainer environment="about">
       <header className="grid gap-10 border-b border-[var(--color-line)] pb-16 lg:grid-cols-[7fr_5fr] lg:items-end lg:pb-24">
         <SectionTitle eyebrow="About / Personal archive" title="About" />
         <div>

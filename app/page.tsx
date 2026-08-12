@@ -2,6 +2,7 @@ import { HomeHero } from "@/components/home/HomeHero";
 import { SelectedMoments } from "@/components/home/SelectedMoments";
 import { TextLink } from "@/components/home/TextLink";
 import { PageContainer } from "@/components/layout/PageContainer";
+import { MarqueeBand } from "@/components/motion/MarqueeBand";
 import { Divider } from "@/components/ui/Divider";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 
@@ -16,8 +17,9 @@ const interests = ["音乐", "健身", "电影", "阅读", "摄影", "游戏"] a
 
 export default function Home() {
   return (
-    <PageContainer>
+    <PageContainer environment="home">
       <HomeHero />
+      <MarqueeBand text="ARCHIVE / MEMORY / OBSERVE / ZHENG /" />
 
       <div className="section-stack">
         <section className="editorial-grid items-start" aria-labelledby="home-about-title">
@@ -40,6 +42,8 @@ export default function Home() {
           <Divider />
           <SelectedMoments />
         </section>
+
+        <MarqueeBand text="MOMENTS / JOURNEY / MEMORY / LIFE /" />
 
         <section className="editorial-grid items-start" aria-labelledby="journey-preview-title">
           <div>

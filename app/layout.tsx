@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
+import { MotionLayer } from "@/components/motion/MotionLayer";
 import { getSiteUrl } from "@/lib/site-url";
 import "./globals.css";
 
@@ -42,6 +43,7 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <body>
+        <MotionLayer />
         <Navbar />
         {children}
         <Footer />

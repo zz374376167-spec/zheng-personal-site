@@ -14,7 +14,7 @@ export default function JourneyPage() {
   const entryCount = timeline.stages.reduce((count, stage) => count + stage.entries.length, 0);
 
   return (
-    <PageContainer>
+    <PageContainer environment="journey">
       <header className="grid gap-10 border-b border-[var(--color-line)] pb-16 lg:grid-cols-[7fr_5fr] lg:items-end lg:pb-24">
         <SectionTitle eyebrow="Life archive / 2005—Now" title="Journey" />
         <div className="max-w-md">

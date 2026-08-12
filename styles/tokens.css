@@ -1,6 +1,7 @@
 :root {
   /* Black metallic palette: carbon, silver ink, and restrained cool highlights. */
-  --surface-background: #0b0c0c;
+  --surface-background: #0c0e0e;
+  --surface-graphite: #101212;
   --surface-raised: #111313;
   --text-primary: #e3e5e3;
   --text-secondary: #8d9291;

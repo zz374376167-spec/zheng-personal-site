@@ -4,11 +4,11 @@ import { HeroPerspective } from "./HeroPerspective";
 
 export function HomeHero() {
   return (
-    <HeroPerspective className="grid min-h-[76vh] items-end gap-12 border-b border-[var(--color-line)] pb-16 lg:grid-cols-[5fr_7fr] lg:gap-20 lg:pb-24">
-      <div className="flex h-full flex-col justify-between pt-4">
+    <HeroPerspective className="hero-scene relative min-h-[76vh] border-b border-[var(--color-line)] pb-16 lg:min-h-[82vh] lg:pb-24">
+      <div className="hero-scene-copy relative z-10 flex min-h-[68vh] flex-col justify-between pt-4 lg:w-[46%]">
         <p className="type-caption">Personal archive / 2026</p>
         <div className="mt-24 lg:mt-auto lg:pb-3">
-          <h1 className="type-hero hero-title-block">Zheng</h1>
+          <h1 className="type-hero hero-monument-title">Zheng</h1>
           <p className="mt-7 max-w-md text-xl leading-relaxed sm:text-2xl">
             詹政，一个记录人生的人。
           </p>
@@ -21,22 +21,21 @@ export function HomeHero() {
         </div>
       </div>
 
-      <figure className="hero-tilt-figure">
-        <div className="hero-tilt-media relative ml-auto aspect-[4/3] w-full overflow-hidden">
+      <figure className="hero-tilt-figure hero-scene-visual">
+        <div className="hero-tilt-media hero-sword-mount">
           <Image
-            src="/images/hero/metal-eye-sword-v2.png"
-            alt="黑白金属剑身之间显现的一双眼睛"
+            src="/images/hero/monumental-sword-hero.png"
+            alt="烟雾与定向光线中显现的巨型锻造金属剑结构"
             fill
             priority
-            sizes="(max-width: 1024px) 100vw, 58vw"
-            className="hero-metal-eye-image object-cover"
+            sizes="(max-width: 768px) 143vw, 108vw"
+            className="hero-monumental-sword-image"
           />
-          <div className="hero-image-vignette absolute inset-0" aria-hidden="true" />
+          <span className="hero-sword-edge-fade" aria-hidden="true" />
         </div>
-        <figcaption className="type-caption mt-3 flex justify-between gap-4">
-          <span>Metal study / Eye</span>
-          <span>01</span>
-        </figcaption>
+        <span className="hero-atmosphere hero-atmosphere-back" aria-hidden="true" />
+        <span className="hero-atmosphere hero-atmosphere-front" aria-hidden="true" />
+        <span className="hero-reflection-field" aria-hidden="true" />
       </figure>
     </HeroPerspective>
   );
