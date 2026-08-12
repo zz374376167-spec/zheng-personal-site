@@ -8,7 +8,7 @@ export function HomeHero() {
       <div className="flex h-full flex-col justify-between pt-4">
         <p className="type-caption">Personal archive / 2026</p>
         <div className="mt-24 lg:mt-auto lg:pb-3">
-          <h1 className="type-hero hero-metallic-title">Zheng</h1>
+          <h1 className="type-hero hero-title-block">Zheng</h1>
           <p className="mt-7 max-w-md text-xl leading-relaxed sm:text-2xl">
             詹政，一个记录人生的人。
           </p>
@@ -24,7 +24,7 @@ export function HomeHero() {
       <figure className="hero-tilt-figure">
         <div className="hero-tilt-media relative ml-auto aspect-[4/3] w-full overflow-hidden">
           <Image
-            src="/images/hero/metal-eye-sword.png"
+            src="/images/hero/metal-eye-sword-v2.png"
             alt="黑白金属剑身之间显现的一双眼睛"
             fill
             priority
