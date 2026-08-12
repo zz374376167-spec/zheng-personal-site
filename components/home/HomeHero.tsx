@@ -1,9 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getPhotoById } from "@/lib/photos";
 import { HeroPerspective } from "./HeroPerspective";
-
-const heroPhoto = getPhotoById("portrait-guangzhou");
 
 export function HomeHero() {
   return (
@@ -25,18 +22,19 @@ export function HomeHero() {
       </div>
 
       <figure className="hero-tilt-figure">
-        <div className="hero-tilt-media relative ml-auto aspect-[3/4] w-full max-w-[42rem] overflow-hidden bg-[var(--color-line)]">
+        <div className="hero-tilt-media relative ml-auto aspect-[4/3] w-full overflow-hidden">
           <Image
-            src={heroPhoto.src}
-            alt={heroPhoto.alt}
+            src="/images/hero/metal-eye-sword.png"
+            alt="黑白金属剑身之间显现的一双眼睛"
             fill
             priority
             sizes="(max-width: 1024px) 100vw, 58vw"
-            className="object-cover"
+            className="hero-metal-eye-image object-cover"
           />
+          <div className="hero-image-vignette absolute inset-0" aria-hidden="true" />
         </div>
         <figcaption className="type-caption mt-3 flex justify-between gap-4">
-          <span>Portrait / Guangzhou</span>
+          <span>Metal study / Eye</span>
           <span>01</span>
         </figcaption>
       </figure>

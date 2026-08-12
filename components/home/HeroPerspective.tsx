@@ -39,8 +39,8 @@ export function HeroPerspective({ children, className }: HeroPerspectiveProps) {
     if (!root) return;
 
     const { x, y } = pointerRef.current;
-    root.style.setProperty("--hero-rotate-x", `${(0.5 - y) * 4}deg`);
-    root.style.setProperty("--hero-rotate-y", `${(x - 0.5) * 6}deg`);
+    root.style.setProperty("--hero-rotate-x", `${(0.5 - y) * 3}deg`);
+    root.style.setProperty("--hero-rotate-y", `${(x - 0.5) * 4}deg`);
     root.style.setProperty("--hero-scale", "1.015");
     root.style.setProperty("--hero-highlight-x", `${(x - 0.5) * 3}%`);
   };

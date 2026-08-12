@@ -60,6 +60,23 @@ figure:hover img {
   will-change: transform;
 }
 
+.hero-metal-eye-image {
+  filter: saturate(0) contrast(1.03) brightness(0.86);
+  object-position: 50% 54%;
+}
+
+.hero-tilt-figure:hover .hero-metal-eye-image {
+  filter: saturate(0) contrast(1.05) brightness(0.9);
+}
+
+.hero-image-vignette {
+  background:
+    linear-gradient(90deg, var(--surface-background) 0%, transparent 12%, transparent 88%, var(--surface-background) 100%),
+    linear-gradient(180deg, var(--surface-background) 0%, transparent 14%, transparent 82%, var(--surface-background) 100%);
+  opacity: 0.46;
+  pointer-events: none;
+}
+
 .gallery-photo-media {
   transform: translateY(0) scale(1);
   transform-origin: center;
@@ -122,5 +139,13 @@ a {
   .hero-tilt-media {
     transform: none;
     transition: none;
+  }
+
+  .hero-metal-eye-image {
+    object-position: 51% 58%;
+  }
+
+  .hero-image-vignette {
+    opacity: 0.34;
   }
 }
