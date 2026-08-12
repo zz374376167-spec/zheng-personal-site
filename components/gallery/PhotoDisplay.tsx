@@ -10,16 +10,18 @@ interface PhotoDisplayProps {
 
 export function PhotoDisplay({ photo, index, priority = false, className = "" }: PhotoDisplayProps) {
   return (
-    <figure className={className}>
-      <Image
-        src={photo.src}
-        alt={photo.alt}
-        width={photo.width}
-        height={photo.height}
-        priority={priority}
-        sizes="(max-width: 768px) 100vw, (max-width: 1280px) 80vw, 68rem"
-        className="h-auto w-full"
-      />
+    <figure className={`gallery-photo ${className}`}>
+      <div className="gallery-photo-media">
+        <Image
+          src={photo.src}
+          alt={photo.alt}
+          width={photo.width}
+          height={photo.height}
+          priority={priority}
+          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 80vw, 68rem"
+          className="h-auto w-full"
+        />
+      </div>
       <figcaption className="mt-3 grid grid-cols-[3rem_1fr_auto] gap-3 border-t border-[var(--color-line)] pt-3">
         <span className="type-caption">{String(index + 1).padStart(2, "0")}</span>
         <span className="text-sm">{photo.title}</span>

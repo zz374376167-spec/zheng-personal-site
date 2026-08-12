@@ -1,11 +1,14 @@
 :root {
-  /* Color system: warm paper, carbon ink, and restrained silver. */
-  --surface-background: #f2efe7;
-  --text-primary: #111210;
-  --text-secondary: #6d706d;
-  --border-subtle: #c5c6c1;
-  --accent-silver: #858c91;
-  --accent-silver-dark: #555d62;
+  /* Black metallic palette: carbon, silver ink, and restrained cool highlights. */
+  --surface-background: #0b0c0c;
+  --surface-raised: #111313;
+  --text-primary: #e3e5e3;
+  --text-secondary: #8d9291;
+  --border-subtle: rgba(207, 214, 212, 0.2);
+  --accent-silver: #b9bfbd;
+  --accent-silver-dark: #757c7a;
+  --silver-shadow: #777d7b;
+  --silver-highlight: #f0f2f0;
 
   /* Four-point spacing system. */
   --space-1: 0.25rem;

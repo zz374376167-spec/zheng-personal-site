@@ -14,6 +14,28 @@
   --type-caption-line: 1.45;
 }
 
+.type-hero,
+.type-page-title {
+  background: linear-gradient(
+    112deg,
+    var(--silver-shadow) 0%,
+    #c4c8c6 36%,
+    var(--silver-highlight) 52%,
+    #b0b5b3 70%,
+    var(--silver-shadow) 100%
+  );
+  background-clip: text;
+  color: var(--text-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-metallic-title {
+  background-position: calc(50% + var(--hero-highlight-x, 0%)) 50%;
+  background-size: 112% 100%;
+  transition: background-position 180ms ease-out;
+}
+
 .type-hero {
   font-size: var(--type-hero-size);
   font-weight: 500;
@@ -29,6 +51,7 @@
 }
 
 .type-section-title {
+  color: #d3d6d4;
   font-size: var(--type-section-size);
   font-weight: 500;
   letter-spacing: -0.03em;

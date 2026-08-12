@@ -1,16 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import { getPhotoById } from "@/lib/photos";
+import { HeroPerspective } from "./HeroPerspective";
 
 const heroPhoto = getPhotoById("portrait-guangzhou");
 
 export function HomeHero() {
   return (
-    <section className="grid min-h-[76vh] items-end gap-12 border-b border-[var(--color-line)] pb-16 lg:grid-cols-[5fr_7fr] lg:gap-20 lg:pb-24">
+    <HeroPerspective className="grid min-h-[76vh] items-end gap-12 border-b border-[var(--color-line)] pb-16 lg:grid-cols-[5fr_7fr] lg:gap-20 lg:pb-24">
       <div className="flex h-full flex-col justify-between pt-4">
         <p className="type-caption">Personal archive / 2026</p>
         <div className="mt-24 lg:mt-auto lg:pb-3">
-          <h1 className="type-hero">Zheng</h1>
+          <h1 className="type-hero hero-metallic-title">Zheng</h1>
           <p className="mt-7 max-w-md text-xl leading-relaxed sm:text-2xl">
             詹政，一个记录人生的人。
           </p>
@@ -23,8 +24,8 @@ export function HomeHero() {
         </div>
       </div>
 
-      <figure>
-        <div className="relative ml-auto aspect-[3/4] w-full max-w-[42rem] overflow-hidden bg-[var(--color-line)]">
+      <figure className="hero-tilt-figure">
+        <div className="hero-tilt-media relative ml-auto aspect-[3/4] w-full max-w-[42rem] overflow-hidden bg-[var(--color-line)]">
           <Image
             src={heroPhoto.src}
             alt={heroPhoto.alt}
@@ -39,6 +40,6 @@ export function HomeHero() {
           <span>01</span>
         </figcaption>
       </figure>
-    </section>
+    </HeroPerspective>
   );
 }
