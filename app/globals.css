@@ -118,11 +118,6 @@ a {
     transition: none !important;
   }
 
-  .hero-metallic-title {
-    background-position: 50% 50% !important;
-    transition: none !important;
-  }
-
   .hero-tilt-media,
   .gallery-photo-media,
   .gallery-photo:hover .gallery-photo-media {
@@ -132,10 +127,6 @@ a {
 }
 
 @media (hover: none), (pointer: coarse), (max-width: 47.999rem) {
-  .hero-metallic-title {
-    background-position: 50% 50%;
-  }
-
   .hero-tilt-media {
     transform: none;
     transition: none;

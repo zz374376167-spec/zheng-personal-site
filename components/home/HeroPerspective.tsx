@@ -12,14 +12,12 @@ type PerspectiveStyle = CSSProperties & {
   "--hero-rotate-x": string;
   "--hero-rotate-y": string;
   "--hero-scale": string;
-  "--hero-highlight-x": string;
 };
 
 const restingStyle: PerspectiveStyle = {
   "--hero-rotate-x": "0deg",
   "--hero-rotate-y": "0deg",
   "--hero-scale": "1",
-  "--hero-highlight-x": "0%",
 };
 
 export function HeroPerspective({ children, className }: HeroPerspectiveProps) {
@@ -42,7 +40,6 @@ export function HeroPerspective({ children, className }: HeroPerspectiveProps) {
     root.style.setProperty("--hero-rotate-x", `${(0.5 - y) * 3}deg`);
     root.style.setProperty("--hero-rotate-y", `${(x - 0.5) * 4}deg`);
     root.style.setProperty("--hero-scale", "1.015");
-    root.style.setProperty("--hero-highlight-x", `${(x - 0.5) * 3}%`);
   };
 
   const handlePointerMove = (event: ReactPointerEvent<HTMLDivElement>) => {
@@ -68,7 +65,6 @@ export function HeroPerspective({ children, className }: HeroPerspectiveProps) {
     root.style.setProperty("--hero-rotate-x", "0deg");
     root.style.setProperty("--hero-rotate-y", "0deg");
     root.style.setProperty("--hero-scale", "1");
-    root.style.setProperty("--hero-highlight-x", "0%");
   };
 
   return (

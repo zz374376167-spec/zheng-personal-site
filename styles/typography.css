@@ -14,7 +14,6 @@
   --type-caption-line: 1.45;
 }
 
-.type-hero,
 .type-page-title {
   background: linear-gradient(
     112deg,
@@ -30,18 +29,30 @@
   -webkit-text-fill-color: transparent;
 }
 
-.hero-metallic-title {
-  background-position: calc(50% + var(--hero-highlight-x, 0%)) 50%;
-  background-size: 112% 100%;
-  transition: background-position 180ms ease-out;
-}
-
 .type-hero {
   font-size: var(--type-hero-size);
   font-weight: 520;
   letter-spacing: -0.06em;
   line-height: var(--type-hero-line);
   white-space: nowrap;
+}
+
+.hero-title-block {
+  display: inline-block;
+  width: fit-content;
+  max-width: 100%;
+  padding: 0.04em 0.11em 0.1em 0.08em;
+  background: #c4c8c6;
+  background-clip: border-box;
+  color: #0a0b0b;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: currentColor;
+}
+
+@media (max-width: 30rem) {
+  .hero-title-block {
+    font-size: clamp(3.25rem, 20vw, 5.5rem);
+  }
 }
 
 .type-page-title {
