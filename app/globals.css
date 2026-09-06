@@ -473,3 +473,13 @@ a {
   }
 
 }
+
+/* Dify 智能助手聊天机器人 */
+#dify-chatbot-bubble-button {
+  background-color: #1c64f2 !important;
+}
+
+#dify-chatbot-bubble-window {
+  width: 24rem !important;
+  height: 40rem !important;
+}

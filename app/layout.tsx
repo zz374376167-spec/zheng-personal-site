@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { DifyChatbot } from "@/components/layout/DifyChatbot";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { MotionLayer } from "@/components/motion/MotionLayer";
@@ -47,6 +48,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <DifyChatbot />
       </body>
     </html>
   );
